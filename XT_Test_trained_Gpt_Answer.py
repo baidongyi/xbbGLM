@@ -1,6 +1,6 @@
 import os
 
-from XT06_run_trained_glm import gpt_trained_answer
+from XT_run_trained_glm import gpt_trained_answer
 
 if __name__ == '__main__':
     for i in range(0, 30):

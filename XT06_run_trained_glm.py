@@ -1,9 +1,9 @@
 import warnings
 
 from transformers import AutoTokenizer, AutoModel, AutoConfig
-from XT52_read_qa_lib import *
+from XT_read_qa_lib import *
 
-from XT51_excel_writer import insert_data_to_sheet
+from XT_excel_writer import insert_data_to_sheet
 from shutil import copyfile
 import os
 import pandas as pd
@@ -47,7 +47,7 @@ def read_list_from_file(file_path: str, max_row: int):
     for j in range(start_row, my_max_row):
         q, a = df['Q'].iloc[j], df['A'].iloc[j]
         my_list.append((q, a))
-        print(str(j) + ".\t Q:" + str(q) + "\t -> " + "  A:" + str(a) + " ")
+        # print(str(j) + ".\t Q:" + str(q) + "\t -> " + "  A:" + str(a) + " ")
 
     print('=== END reading data from file = ' + file_path)
 

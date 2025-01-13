@@ -1,7 +1,7 @@
 import os.path
 
-from XT52_read_qa_lib import *
-from XT51_excel_writer import insert_data_to_sheet
+from XT_read_qa_lib import *
+from XT_excel_writer import insert_data_to_sheet
 
 from shutil import copyfile
 import os

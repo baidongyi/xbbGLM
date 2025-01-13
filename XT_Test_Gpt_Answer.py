@@ -1,6 +1,6 @@
 import os
 
-from XT04_run_glm_save_history import gpt_answer
+from XT_run_glm import gpt_answer
 
 if __name__ == '__main__':
     for i in range(0, 30):

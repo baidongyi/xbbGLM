@@ -4,6 +4,7 @@ import requests
 
 
 def get_url():
+    # return r"http://10.1.24.2:19980/glm/"
     return "http://127.0.0.1:8000"
 
 def chatGLM(prompt, history, user_name):

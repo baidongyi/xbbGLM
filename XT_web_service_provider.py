@@ -1,7 +1,7 @@
 import uvicorn
 # -*- coding:utf-8 -*-
 from fastapi import FastAPI
-from XT04_run_glm_save_history import gpt_answer
+from XT_run_glm import gpt_answer
 import socket
 
 app = FastAPI()

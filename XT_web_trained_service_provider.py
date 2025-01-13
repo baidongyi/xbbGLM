@@ -2,7 +2,7 @@ import uvicorn
 # -*- coding:utf-8 -*-
 from fastapi import FastAPI
 
-from XT06_run_trained_glm import gpt_trained_answer
+from XT_run_trained_glm import gpt_trained_answer
 import socket
 
 app = FastAPI()
