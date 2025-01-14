@@ -42,6 +42,14 @@
 
 [下载地址](https://www.jetbrains.com/zh-cn/toolbox-app/download/download-thanks.html?platform=windows)
 
+Git安装
+
+[Git下载地址](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe)
+
+如果不习惯用命令行，可以用 git GUI的 乌龟git
+
+[乌龟git下载链接](https://download.tortoisegit.org/tgit/2.17.0.0/TortoiseGit-2.17.0.2-64bit.msi)
+
 ## **1.2 心理准备**
 学习大语言模型训练比我之前学习其他的IT技术，都要更加花费时间和精力。过程中经常会报各种错，查很多资料都未必能解决。
 
@@ -51,10 +59,13 @@
 
 # **2.ChatGLM本地部署**
 
+从这个章节开始，我会正常讲从0开始怎么拉取代码和配置环境。
+如果你觉得这些太困难，可以直接从2.3开始看，直接百度盘下载配置后的结果，可以快速上手。
+
 ## **2.1 本地部署**
 
 需要访问github拉取代码。
-如果访问github有困难的，建议安装fastgithub。[百度盘下载fastgithub链接](https://pan.baidu.com/s/1iKMY0w1Y7sDW-aQx2LA4Mw?pwd=nn6c)
+如果访问github有困难的，建议安装fastgithub。[百度盘下载FastGithub链接](https://pan.baidu.com/s/1iKMY0w1Y7sDW-aQx2LA4Mw?pwd=nn6c)
 
 下载得到一个文件夹，打开运行 FastGithub.UI 即可。
 ![fastgithub](images/fastGithub.png)
@@ -75,6 +86,11 @@
 从我的百度云盘下载
 [下载](https://pan.baidu.com/s/15GVjxkSNRHmCOFfkRpkjSA?pwd=qqkg)
 
+下载以后得到:
+![模型文件](images/model.png)
+
+一定要下载完整，不能少文件。
+
 ### **2.1.3 安装依赖**
 
 需要使用pip安装大量包，可考虑设置使用TH的下载源，提高速度
@@ -84,9 +100,9 @@
 
 `pip install -r ./requirements.txt`
 
-requirements里没有torch，这个需要手动安装cuda版本。默认pip会安装cpu版本。
+requirements里没有torch，这个需要手动安装cuda版本。默认pip会很容易安装cpu版本。然后运行起来很慢，吃很多内存，然后GPU显存不怎么用。
 
-请根据[torch下载链接](https://pytorch.org/get-started/locally/)下载安装，文件比较大，下载耗时间。
+请根据 [torch下载链接](https://pytorch.org/get-started/locally/)下载安装，文件比较大，下载耗时间。
 ![pytorch下载界面](images/pytorch.png)
 安装之后，运行以下代码，确保成功安装了torch cuda版本
 
@@ -101,7 +117,10 @@ requirements里没有torch，这个需要手动安装cuda版本。默认pip会�
 返回True表示安装cuda torch成功。False则表示失败。
 
 ### **2.1.4 运行测试代码**
-##
+
+运行测试代码及查看结果。
+![运行测试代码](images/run1.png)
+
 ## **2.2 ptune v2微调**
 ### **2.2.1 ptune微调是什么**
 ###
