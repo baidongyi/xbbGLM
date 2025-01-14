@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer, AutoModel
-from XT00_Parameter import para
+from XT00_parameter import para
 
 
 def chat(prompt, history):

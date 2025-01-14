@@ -8,7 +8,7 @@ import torch
 import sys
 import os
 
-from XT00_Parameter import para
+from XT00_parameter import para
 
 DEVICE = "cuda"
 DEVICE_ID = "0"

@@ -6,3 +6,5 @@ gradio
 mdtex2html
 sentencepiece
 accelerate
+
+gradio==5.12.0
