@@ -2,7 +2,7 @@
 
 para = {}
 
-para['model_path'] = r"C:\Users\baido\OneDrive\Work\AI\xbbGLM\chatglm-6b-int4"
+para['model_path'] = r"C:\Users\baido\OneDrive\Work\AI\github\xbbGPT\chatglm-6b-int4"
 
 
 

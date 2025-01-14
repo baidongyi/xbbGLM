@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
     user_name = os.getlogin()
 
-    history = get_my_history(user_name, get_row_to_load())
+    history = []
 
     for i in range(1, 99):
         print("--------------------------")
@@ -137,8 +137,6 @@ if __name__ == "__main__":
 
         print(str(i) + "\t.我:" + ask)
         print(str(i) + "\t.GPT:" + response)
-
-        update_history_file(user_name, ask, response)
 
         print("===========================")
         print('------ history --------')

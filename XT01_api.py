@@ -8,6 +8,8 @@ import torch
 import sys
 import os
 
+from XT00_Parameter import para
+
 DEVICE = "cuda"
 DEVICE_ID = "0"
 CUDA_DEVICE = f"{DEVICE}:{DEVICE_ID}" if DEVICE_ID else DEVICE
@@ -59,10 +61,8 @@ async def create_item(request: Request):
 
 
 if __name__ == '__main__':
-    model_path = r"C:\Users\administrator\xxtony\xbbgpt\chatglm-6b-int4"
-    if not os.path.exists(model_path):
-        model_path = r"C:\Users\baido\OneDrive\Work\AI\xbbGPT\chatglm-6b-int4"
 
+    model_path = para['model_path']
 
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     model = AutoModel.from_pretrained(model_path, trust_remote_code=True).half().cuda()
