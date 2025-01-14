@@ -78,12 +78,18 @@ CUDA
 [下载](https://pan.baidu.com/s/15GVjxkSNRHmCOFfkRpkjSA?pwd=qqkg)
 
 ### **2.1.3 安装依赖**
+
+需要使用pip安装大量包，可考虑设置使用TH的下载源，提高速度
+
+`pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple`
+
+
 `pip install -r ./requirements.txt`
 
 requirements里没有torch，这个需要手动安装cuda版本。默认pip会安装cpu版本。
 
 请根据[torch下载链接](https://pytorch.org/get-started/locally/)下载安装，文件比较大，下载耗时间。
-
+![pytorch下载界面](images/pytorch.png)
 安装之后，运行以下代码，确保成功安装了torch cuda版本
 
 `python`
