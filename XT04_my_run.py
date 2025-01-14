@@ -9,8 +9,8 @@ def chat(prompt, history):
     model = AutoModel.from_pretrained(path, trust_remote_code=True, revision="").half().cuda()
     model = model.eval()
 
-    response, history = model.chat(tokenizer, prompt, history)
-    return response
+    res, history = model.chat(tokenizer, prompt, history)
+    return res
 
 
 if __name__ == "__main__":
