@@ -2,6 +2,7 @@ import shutil, os
 
 import pandas as pd
 
+from XT_S0_parameters import project_root_path
 
 def escape_str(text:str):
     return str(str(str(text).replace("\n"," ")).replace("\"","'")).replace("“","'")
@@ -43,11 +44,11 @@ def write_lines_into_file(lines: [], dest_file: str):
 
 
 if __name__ == '__main__':
-    source_folder = "C:\\Users\\baido\\OneDrive\\Work\\AI\\xbbGPT\\ChatGLM-6B-main\\ptuning\\source_files"
-    dest_file = "C:\\Users\\baido\\OneDrive\\Work\\AI\\xbbGPT\\ChatGLM-6B-main\\ptuning\\dest_files\\d1.json"
-    val_file_path = 'C:\\Users\\baido\\OneDrive\\Work\\AI\\xbbGPT\\ChatGLM-6B-main\\ptuning\\dest_files\\t1.json'
+    source_folder = project_root_path + "\\ChatGLM-6B-main\\ptuning\\source_files"
+    dest_file = project_root_path + "\\ChatGLM-6B-main\\ptuning\\dest_files\\d1.json"
+    val_file_path = project_root_path + "\\ChatGLM-6B-main\\ptuning\\dest_files\\t1.json"
 
-    lines = get_all_lines_from_folder(source_folder, max_row=9)
+    lines = get_all_lines_from_folder(source_folder, max_row=99)
     write_lines_into_file(lines, dest_file)
 
     shutil.copyfile(dest_file, val_file_path)
