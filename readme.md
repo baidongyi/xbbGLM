@@ -256,6 +256,10 @@ ptuning/dest_files 文件夹。
 运行评估效果
 ![进行评估效果](images/ptune_eval.png)
 
+查看评估结果
+![查看评估结果](images/train_result2.png)
+
+
 简单解释一下这些指标：
 ![bleu](images/bleu.png)
 
